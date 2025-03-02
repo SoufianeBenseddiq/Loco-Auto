@@ -1,0 +1,95 @@
+je vais te donner une voiture et sa categorie ,
+donne moi sa fiche d'informations composee de :
+- categorie parmi les options suivantes  (suv, berlines, breaks, cabriolets,compacts, crossovers) ,
+- prix de location par jour convenable et logique, -une description non petite et non trop longe,
+- nombre de passagers, -nombre de portes, -transmission (automatique ou manuelle),
+- type de carburant (gasoil ou essence ),
+- nombre de valises qu'elle peut supporter;
+- une longue descrption de la voiture 
+c'est moi qui va te proposer la voiture et tu me donnes sa fiche
+
+
+je vais te donner les tables de ma base de donnees,
+et tu dois me donner le code sql remplire les deux tables voitures et details_voitures et partir des information que tu as dit ;
+
+voila les tables:
+
+
+DROP TABLE IF EXISTS `categories`;
+CREATE TABLE IF NOT EXISTS `categories` (
+  `id_cat` int DEFAULT NULL,
+  `libelle_cat` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id_cat`, `libelle_cat`) VALUES
+(0, 'suv'),
+(1, 'cabriolets'),
+(2, 'breaks'),
+(3, 'berlines'),
+(4, 'compacts'),
+(5, 'crossovers');
+
+
+
+COMMIT;DROP TABLE IF EXISTS `marques`;
+CREATE TABLE IF NOT EXISTS `marques` (
+  `id_marque` int NOT NULL,
+  `libelle_marque` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_marque`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `marques`
+--
+
+INSERT INTO `marques` (`id_marque`, `libelle_marque`) VALUES
+(0, 'audi'),
+(1, 'bmw'),
+(2, 'mercedes'),
+(3, 'subaru'),
+(4, 'volvo'),
+(5, 'mazda'),
+(6, 'honda'),
+(7, 'toyota'),
+(8, 'volkswagen'),
+(9, 'nissan'),
+(10, 'toyota');
+
+
+
+COMMIT;DROP TABLE IF EXISTS `voitures`;
+CREATE TABLE IF NOT EXISTS `voitures` (
+  `id_voiture` int NOT NULL AUTO_INCREMENT,
+  `libelle_voiture` varchar(255) NOT NULL,
+  `date_achat` date NOT NULL,
+  `prix_jour` double NOT NULL,
+  `id_marque` int NOT NULL,
+  `id_cat` int NOT NULL,
+  PRIMARY KEY (`id_voiture`),
+  KEY `id_cat` (`id_cat`),
+  KEY `id_marque` (`id_marque`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+COMMIT;
+
+
+DROP TABLE IF EXISTS `details_voitures`;
+CREATE TABLE IF NOT EXISTS `details_voitures` (
+  `id_detail` int NOT NULL AUTO_INCREMENT,
+  `id_voiture` int ,
+  `description` text NOT NULL,
+  `nbr_passagers` int NOT NULL,
+  `nbr_valises` int NOT NULL,
+  `transmission` varchar(100) NOT NULL,
+  `type_carburant` varchar(255) NOT NULL,
+  `climatisation` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`id_detail`),
+  KEY `id_voiture` (`id_voiture`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+COMMIT;
+
+
+
