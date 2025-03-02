@@ -1,0 +1,164 @@
+SUV :
+    Audi:
+        Audi Q5
+        Audi Q7
+        Audi Q3
+    BMW:
+        BMW X5
+        BMW X3
+        BMW X1
+    Mercedes:
+        Mercedes-Benz GLE
+        Mercedes-Benz GLC
+        Mercedes-Benz GLA
+    Subaru:
+        Subaru Forester
+        Subaru Outback
+        Subaru Crosstrek
+    Volvo:
+        Volvo XC90
+        Volvo XC60
+        Volvo XC40
+    Mazda:
+        Mazda CX-5
+        Mazda CX-9
+        Mazda CX-30
+    Honda:
+        Honda CR-V
+        Honda Passport
+        Honda HR-V
+    Toyota:
+        Toyota RAV4
+        Toyota Highlander
+        Toyota 4Runner
+    Volkswagen:
+        Volkswagen Tiguan
+        Volkswagen Atlas
+        Volkswagen Touareg----
+    Nissan:
+        Nissan Rogue
+        Nissan Pathfinder
+    Ford:
+        Ford Explorer
+        Ford Escape
+        Ford Edge
+    Renault:
+        Renault Koleos
+        Renault Arkana
+        Renault Kadjar--
+
+Compacts :
+    Audi:
+        Audi A3-----
+        Audi RS3
+    BMW:
+        BMW 1 Series
+        BMW M2
+    Mercedes:
+        Mercedes-Benz A-Class
+        Mercedes-Benz B-Class
+        Mercedes-Benz CLA-Class
+    Subaru:
+        Subaru Impreza
+        Subaru WRX
+    Volvo:
+        Volvo S60
+        Volvo V60
+        Volvo V40 Cross Country
+    Mazda:
+        Mazda3
+        Mazda2
+    Honda:
+        Honda Civic
+        Honda Fit
+    Toyota:
+        Toyota Corolla
+        Toyota Yaris
+    Volkswagen:
+        Volkswagen Golf
+        Volkswagen Polo
+    Nissan:
+        Nissan Sentra
+        Nissan Versa
+    Ford:
+        Ford Focus
+        Ford Fiesta
+    Renault:
+        Renault Clio
+        Renault Megane
+
+Cabriolets :
+    Audi:
+        Audi A3 Cabriolet
+        Audi A5 Cabriolet
+    BMW:
+        BMW 2 Series Convertible
+        BMW 4 Series Convertible
+    Mercedes:
+        Mercedes-Benz C-Class Cabriolet
+        Mercedes-Benz CLE Cabriolet
+    Volkswagen:
+        Volkswagen Golf Cabriolet
+        Volkswagen T-Roc Cabriolet
+
+Crossovers :
+    Audi:
+        Audi Q2
+        Audi Q3 Sportback
+        Audi Q4 e-tron
+    BMW:
+        BMW X4
+        BMW X6
+    Mercedes:
+        Mercedes-Benz GLC Coupe
+        Mercedes-Benz GLE Coupe
+    Volvo:
+        Volvo XC60 Recharge
+        Volvo XC90 Recharge
+
+Breaks :
+    Audi:
+        Audi A6 allroad
+        Audi RS4 Avant
+    BMW:
+        BMW 3 Series Touring
+        BMW 6 Series Gran Turismo
+    Mercedes:
+        Mercedes-Benz E-Class Estate
+        Mercedes-Benz E-Class All-Terrain
+    Volvo:
+        Volvo V90 Cross Country
+        Volvo V60 Polestar Engineered
+
+Berlines :
+    Audi:
+        Audi A3
+        Audi A4
+    BMW:
+        BMW 1 Series
+        BMW 7 Series
+    Mercedes:
+        Mercedes-Benz C-Class
+        Mercedes-Benz S-Class
+    Volvo:
+        Volvo S60
+    Honda:
+        Honda Civic
+        Honda Legend
+Berlines :
+    Toyota:
+        Toyota Corolla
+        Toyota Mirai
+    Volkswagen:
+        Volkswagen Jetta
+        Volkswagen Passat
+    Nissan:
+        Nissan Sentra
+        Nissan Altima
+    Ford:
+        Ford Focus
+        Ford Fusion
+    Renault:
+        Renault Megane
+        Renault Fluence
+        Renault Latitude

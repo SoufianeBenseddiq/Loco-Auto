@@ -1,0 +1,54 @@
+Page d'Accueil :
+Contenu : Présentation générale du service, promotions spéciales.
+Lien avec la base de données : Afficher des promotions en cours, véhicules populaires.
+
+
+Page de Recherche :
+Contenu : Formulaire de recherche pour trouver des véhicules disponibles avec filtration selon prix par jour, nbr de chaises, transmssion(automatique/manulle),
+type de carburant(electrique/diesel/essence), marque, categorie(luxe, petite, SUV, moyenne, monospace).
+Lien avec la base de données : Requêtes pour récupérer les informations sur les véhicules en fonction des critères de recherche.
+
+
+Page de Détails d'un Véhicule :
+Contenu : Informations détaillées sur un véhicule spécifique,Marque, Modèle, Année, Catégorie,Prix par jour, Disponibilité.
+Lien avec la base de données : Récupérer les détails du véhicule à partir de la base de données.
+
+
+Page de Réservation :
+Contenu : Formulaire de réservation avec les options supplémentaires.
+Lien avec la base de données : Enregistrement des réservations dans la base de données.
+
+
+Page de Paiement :
+Contenu : Processus de paiement pour finaliser la réservation.
+Lien avec la base de données : Enregistrement des détails de paiement.
+
+
+Page de Profil Utilisateur :
+Contenu : Informations sur le compte utilisateur, historique des réservations.
+Lien avec la base de données : Afficher les données utilisateur et les réservations associées.
+
+
+Page d'Avis et Commentaires :
+Contenu : Liste des avis et commentaires laissés par les utilisateurs.
+Lien avec la base de données : Récupération des avis depuis la base de données.
+
+
+Page d'Administration :
+Contenu : Tableau de bord pour les administrateurs pour gérer les véhicules, les réservations, etc.
+Lien avec la base de données : Accès aux données administratives et possibilité de mise à jour.
+
+
+Page de Gestion des Véhicules :
+Contenu : Interface pour ajouter, modifier ou supprimer des véhicules.
+Lien avec la base de données : Opérations CRUD (Create, Read, Update, Delete) sur la table des véhicules.
+
+
+Page de Gestion des Catégories :
+Contenu : Interface pour gérer les catégories de véhicules.
+Lien avec la base de données : Opérations CRUD sur la table des catégories.
+
+
+Page de Gestion des Promotions :
+Contenu : Interface pour ajouter, modifier ou supprimer des promotions.
+Lien avec la base de données : Opérations CRUD sur la table des promotions.

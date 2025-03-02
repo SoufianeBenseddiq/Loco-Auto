@@ -1,0 +1,81 @@
+    Table "Véhicules" :
+
+ID_Vehicule (clé primaire) : Identifiant unique pour chaque véhicule.
+Marque, Modèle, Année ,garantie.
+Catégorie : Classification du véhicule (compacte, SUV, berline, etc.).
+Prix par jour : Coût de location quotidien du véhicule.
+Disponibilité : Indicateur de disponibilité du véhicule.
+Utilité : Stocke les détails spécifiques de chaque véhicule disponible à la location.
+
+Table "Utilisateurs" :
+
+ID_Utilisateur (clé primaire) : Identifiant unique pour chaque utilisateur.
+Nom, Prénom, nombre de locations.
+Adresse e-mail, Mot de passe : Informations d'identification de l'utilisateur.
+Numéro de téléphone : Contact de l'utilisateur.
+Type d'utilisateur : Différenciation entre les clients et les administrateurs.
+Utilité : Gère les informations relatives aux utilisateurs du site.
+
+Table "Réservations" :
+
+ID_Reservation (clé primaire) : Identifiant unique pour chaque réservation.
+ID_Utilisateur, ID_Vehicule : Liens vers les tables "Utilisateurs" et "Véhicules".
+Date de début, Date de fin : Période de la réservation.
+CINE client,
+Montant total : Coût total de la réservation.
+Statut de la réservation : Indique si la réservation est confirmée, en attente ou annulée.
+Utilité : Suivi des réservations effectuées par les utilisateurs.
+
+Table "Catégories_Vehicules" :
+
+ID_Categorie (clé primaire) : Identifiant unique pour chaque catégorie.
+Nom de la catégorie : Libellé de la catégorie de véhicules.
+Utilité : Classification des véhicules en différentes catégories.
+
+Table "Paiements" :
+
+ID_Paiement (clé primaire) : Identifiant unique pour chaque paiement.
+ID_Reservation : Liens vers la table "Réservations".
+Montant payé : Montant effectivement payé.
+Date du paiement : Date de la transaction.
+Mode de paiement : Méthode utilisée pour effectuer le paiement.
+Utilité : Stocke les informations sur les transactions de paiement associées aux réservations.
+
+Table "Avis" :
+
+ID_Avis (clé primaire) : Identifiant unique pour chaque avis.
+ID_Utilisateur, ID_Vehicule : Liens vers les tables "Utilisateurs" et "Véhicules".
+Note, Commentaire : Évaluation et commentaire laissés par l'utilisateur.
+Date de l'avis : Date à laquelle l'avis a été soumis.
+Utilité : Permet aux utilisateurs de laisser des avis et des commentaires sur les véhicules.
+
+Table "Administrateurs" :
+
+ID_Admin (clé primaire) : Identifiant unique pour chaque administrateur.
+ID_Utilisateur : Liens vers la table "Utilisateurs".
+Rôle : Définit les permissions spécifiques de l'administrateur.
+Utilité : Gère les informations relatives aux administrateurs du site.
+
+Table "Images_Vehicules" :
+
+ID_Image (clé primaire) : Identifiant unique pour chaque image.
+ID_Vehicule : Liens vers la table "Véhicules".
+Chemin de l'image : Emplacement du fichier image.
+Utilité : Stocke les chemins d'accès aux images associées à chaque véhicule.
+
+
+Table "Villes" :
+
+ID_Ville (clé primaire) : Identifiant unique pour chaque ville.
+Nom de la ville : Nom de la ville.
+Utilité : Stocke les informations sur les villes associées à chaque pays.
+
+Table "Promotions" :
+
+ID_Promotion (clé primaire) : Identifiant unique pour chaque promotion.
+conditions de promotions
+Code promotionnel : Code utilisé lors de la réservation.
+Réduction en pourcentage : Montant de la réduction en pourcentage.
+Date d'expiration : Date à laquelle la promotion expire.
+description promotion
+Utilité : Gestion des promotions spéciales et des réductions.
